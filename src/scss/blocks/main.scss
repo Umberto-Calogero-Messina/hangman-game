@@ -1,1 +1,7 @@
-
+@use '../mixins/responsive.scss' as *;
+.main {
+  @include responsive(laptop) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}

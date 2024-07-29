@@ -1,1 +1,41 @@
+@use '../mixins/responsive.scss' as *;
+.title {
+  font-family: 'Alfa Slab One', serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 34px;
+  letter-spacing: 1%;
+  position: relative;
+  top: 180px;
+  @include responsive(laptop) {
+    top: 50px;
+  }
+}
 
+.subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15.52px;
+}
+
+.button--title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18.15px;
+  color: #f6f6f6;
+}
+
+.wordline {
+  font-size: 2rem;
+  color: #6b5e48;
+
+  &--letter {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 41px;
+    color: #6b5e48;
+  }
+}

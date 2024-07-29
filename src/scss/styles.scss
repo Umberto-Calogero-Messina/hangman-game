@@ -2,3 +2,8 @@
 @use 'base/initial-reset.scss';
 @use 'config/variables.scss';
 @use 'blocks/body.scss';
+@use 'blocks/main.scss';
+@use 'blocks/hangman.scss';
+@use 'blocks/keyboard.scss';
+@use 'blocks/game.scss';
+@use 'blocks/titles.scss';

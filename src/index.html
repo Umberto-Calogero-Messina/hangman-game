@@ -3,12 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <!-- PON UN FAVICON!!! -->
-    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="icon" type="image/svg+xml" href />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet">
     <!-- CAMBIA EL TITLE!!! -->
-    <title>Vite Template</title>
+    <title>Hangman Game</title>
   </head>
   <body>
+    <main class="main">
+      <div>
+        <div class="game-container">
+          <div class="hangman"></div>
+          <div class="game-info"></div>
+        </div>
+      </div>
+
+      <div>
+        <div id="hangman-drawing" class="hangman"></div>
+        <span class="title">ADIVINA LA PALABRA</span>
+        <div id="word" class="word">
+        </div>
+
+        <span class="subtitle" id="subtitle"></span>
+        <!-- <span class="trys" id="trys">Trys: </span> -->
+
+        <div class="keyboard">
+          <button class="key" data-key="a">A</button>
+          <button class="key" data-key="b">B</button>
+          <button class="key" data-key="c">C</button>
+          <button class="key" data-key="d">D</button>
+          <button class="key" data-key="e">E</button>
+          <button class="key" data-key="f">F</button>
+          <button class="key" data-key="g">G</button>
+          <button class="key" data-key="h">H</button>
+          <button class="key" data-key="i">I</button>
+          <button class="key" data-key="j">J</button>
+          <button class="key" data-key="k">K</button>
+          <button class="key" data-key="l">L</button>
+          <button class="key" data-key="m">M</button>
+          <button class="key" data-key="n">N</button>
+          <button class="key" data-key="ñ">Ñ</button>
+          <button class="key" data-key="o">O</button>
+          <button class="key" data-key="p">P</button>
+          <button class="key" data-key="q">Q</button>
+          <button class="key" data-key="r">R</button>
+          <button class="key" data-key="s">S</button>
+          <button class="key" data-key="t">T</button>
+          <button class="key" data-key="u">U</button>
+          <button class="key" data-key="v">V</button>
+          <button class="key" data-key="w">W</button>
+          <button class="key" data-key="x">X</button>
+          <button class="key" data-key="y">Y</button>
+          <button class="key" data-key="z">Z</button>
+        </div>
+        <span class="pop-up" id="pop-up"></span>
+        <button id="restart" class="button button--title">Reiniciar</button>
+      </div>
+
+    </main>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>

@@ -1,0 +1,138 @@
+@use '../mixins/pseudo.scss' as *;
+@use '../mixins/responsive.scss' as *;
+
+.hangman {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  transform: translateX(-50%);
+  @include responsive(laptop) {
+    top: 150px;
+    left: 250px;
+  }
+}
+
+.hangman::before {
+  @include pseudo(85px, 8px);
+  top: 10px;
+  left: 0px;
+  background: #3c392d;
+  border-radius: 0px 10px 10px 0px;
+  @include responsive(laptop) {
+    @include pseudo(143px, 8px);
+  }
+}
+
+.hangman::after {
+  @include pseudo(3px, 22px);
+  top: 10px;
+  left: 70px;
+  background: #3c392d;
+  @include responsive(laptop) {
+    @include pseudo(3px, 38px);
+    left: 110px;
+  }
+}
+
+.head {
+  position: absolute;
+  top: 30px;
+  left: 53px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 5px solid #3c392d;
+  @include responsive(laptop) {
+    left: 92px;
+    top: 48px;
+  }
+}
+
+.body {
+  position: absolute;
+  top: 66px;
+  left: 70px;
+  width: 5px;
+  height: 52px;
+  border-radius: 0px 0px 5px 5px;
+  background: #3c392d;
+  @include responsive(laptop) {
+    left: 109px;
+    top: 85px;
+  }
+}
+
+.arm-left {
+  position: absolute;
+  top: 76px;
+  left: 70px;
+  width: 5px;
+  height: 35px;
+  background: #3c392d;
+  border-radius: 0px 0px 5px 5px;
+  transform: rotate(48deg);
+  transform-origin: top left;
+  @include responsive(laptop) {
+    left: 109px;
+    top: 95px;
+  }
+}
+
+.arm-right {
+  position: absolute;
+  top: 76px;
+  left: 70px;
+  width: 5px;
+  height: 35px;
+  background: #3c392d;
+  border-radius: 0px 0px 5px 5px;
+  transform: rotate(-48deg);
+  transform-origin: top right;
+  @include responsive(laptop) {
+    left: 109px;
+    top: 95px;
+  }
+}
+
+.leg-left {
+  position: absolute;
+  top: 115px;
+  left: 70px;
+  width: 5px;
+  height: 47px;
+  background: #3c392d;
+  border-radius: 0px 0px 5px 5px;
+  transform: rotate(30deg);
+  transform-origin: top left;
+  @include responsive(laptop) {
+    left: 109px;
+    top: 135px;
+  }
+}
+
+.leg-right {
+  position: absolute;
+  top: 115px;
+  left: 70px;
+  width: 5px;
+  height: 47px;
+  background: #3c392d;
+  border-radius: 0px 0px 5px 5px;
+  transform: rotate(-30deg);
+  transform-origin: top right;
+  @include responsive(laptop) {
+    left: 109px;
+    top: 135px;
+  }
+}
+
+.hangman-part {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hangman-part--visible {
+  opacity: 1;
+}
