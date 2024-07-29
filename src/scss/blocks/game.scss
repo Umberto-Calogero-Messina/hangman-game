@@ -9,14 +9,17 @@
   margin-bottom: 1.5rem;
   font-size: 1.3rem;
   background-color: #ffeed0;
-  width: 430px;
+  width: 380px;
   height: 90px;
   margin-inline: auto;
   border-radius: 0.5069rem;
   transition: background-color 1s ease-in-out;
 
   @include responsive(laptop) {
+    width: 430px;
+    height: 90px;
     margin-top: 4rem;
+    font-size: 1.3rem;
   }
 }
 
