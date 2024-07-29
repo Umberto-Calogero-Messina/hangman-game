@@ -92,7 +92,7 @@ const handleVictory = () => {
 };
 
 const handleGameOver = () => {
-  showPopUp(`No tienes más tentativos. La palabra era: ${randomWord.toUpperCase()}`);
+  showPopUp(`No tienes más intentos. La palabra era: ${randomWord.toUpperCase()}`);
   gameOver = true;
 };
 
