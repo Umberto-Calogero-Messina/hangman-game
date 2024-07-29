@@ -21,7 +21,7 @@
   background: #3c392d;
   border-radius: 0px 10px 10px 0px;
   @include responsive(laptop) {
-    @include pseudo(143px, 8px);
+    @include pseudo(8.9375rem, 0.5rem);
   }
 }
 
@@ -31,7 +31,7 @@
   left: 70px;
   background: #3c392d;
   @include responsive(laptop) {
-    @include pseudo(3px, 38px);
+    @include pseudo(0.1875rem, 2.375rem);
     left: 110px;
   }
 }
@@ -43,7 +43,7 @@
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  border: 5px solid #3c392d;
+  border: 0.3125rem solid #3c392d;
   @include responsive(laptop) {
     left: 92px;
     top: 48px;
@@ -56,7 +56,7 @@
   left: 70px;
   width: 5px;
   height: 52px;
-  border-radius: 0px 0px 5px 5px;
+  border-radius: 0rem 0rem 0.3125rem 0.3125rem;
   background: #3c392d;
   @include responsive(laptop) {
     left: 109px;
@@ -71,7 +71,7 @@
   width: 5px;
   height: 35px;
   background: #3c392d;
-  border-radius: 0px 0px 5px 5px;
+  border-radius: 0rem 0rem 0.3125rem 0.3125rem;
   transform: rotate(48deg);
   transform-origin: top left;
   @include responsive(laptop) {
@@ -87,7 +87,7 @@
   width: 5px;
   height: 35px;
   background: #3c392d;
-  border-radius: 0px 0px 5px 5px;
+  border-radius: 0rem 0rem 0.3125rem 0.3125rem;
   transform: rotate(-48deg);
   transform-origin: top right;
   @include responsive(laptop) {
@@ -103,7 +103,7 @@
   width: 5px;
   height: 47px;
   background: #3c392d;
-  border-radius: 0px 0px 5px 5px;
+  border-radius: 0rem 0rem 0.3125rem 0.3125rem;
   transform: rotate(30deg);
   transform-origin: top left;
   @include responsive(laptop) {
@@ -119,12 +119,12 @@
   width: 5px;
   height: 47px;
   background: #3c392d;
-  border-radius: 0px 0px 5px 5px;
+  border-radius: 0rem 0rem 0.3125rem 0.3125rem;
   transform: rotate(-30deg);
   transform-origin: top right;
   @include responsive(laptop) {
-    left: 109px;
-    top: 135px;
+    left: 6.8125rem;
+    top: 8.4375rem;
   }
 }
 

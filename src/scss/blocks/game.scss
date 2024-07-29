@@ -25,8 +25,8 @@
   height: 42px;
   background: #6b5e48;
   border: none;
-  padding: 12px 44px 12px 44px;
-  border-radius: 12px;
+  padding: 0.75rem 2.75rem 0.75rem 2.75rem;
+  border-radius: 0.75rem;
   @include hover {
     background: #7e6e52;
   }

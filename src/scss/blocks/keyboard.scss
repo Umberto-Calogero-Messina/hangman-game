@@ -1,10 +1,10 @@
 @use '../mixins/responsive.scss' as *;
 .keyboard {
-  width: 300px;
-  height: 120px;
+  width: 18.75rem;
+  height: 7.5rem;
   margin-inline: auto;
   margin-top: 2rem;
-  margin-bottom: 100px;
+  margin-bottom: 8rem;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   justify-content: center;
@@ -12,7 +12,7 @@
   gap: 0.2rem;
   @include responsive(laptop) {
     grid-template-columns: repeat(9, 1fr);
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 }
 
@@ -23,8 +23,8 @@
   line-height: 30px;
   color: #3c392d;
   background: none;
-  border: 2.3px solid #928d75;
+  border: 0.1437rem solid #928d75;
   width: 2.5rem;
   height: 2.5rem;
-  border-radius: 6.8px;
+  border-radius: 0.425rem;
 }
